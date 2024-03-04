@@ -15,5 +15,4 @@ steps:
    targetType: 'inline'
    script: |
      ./dsjob-setup.sh
-   failOnStderr: false
-   workingDirectory: "$(System.DefaultWorkingDirectory)/cpdctl-dsjob/"
+   workingDirectory: "$(System.DefaultWorkingDirectory)/"
