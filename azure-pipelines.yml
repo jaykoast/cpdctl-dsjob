@@ -16,3 +16,4 @@ steps:
    script: |
      ./dsjob-setup.sh
    failOnStderr: true
+   workingDirectory: "$(System.DefaultWorkingDirectory)/cpdctl-dsjob/"
