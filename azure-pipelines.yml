@@ -10,7 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: e- task: Bash@3
+- task: Bash@3
   inputs:
-    filePath: '/dsjob-setup.sh'
-    workingDirectory: '.'line script'
+   targetType: 'inline'
+   script: |
+     ./dsjob-setup.sh
+   failOnStderr: true
