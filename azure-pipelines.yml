@@ -27,3 +27,9 @@ steps:
    script: |
      ./dsjob-setup.sh
    workingDirectory: "$(System.DefaultWorkingDirectory)/"
+- task: Bash@3
+  inputs:
+   targetType: 'inline'
+   script: |
+     ./import-export-test.sh
+   workingDirectory: "$(System.DefaultWorkingDirectory)/"
