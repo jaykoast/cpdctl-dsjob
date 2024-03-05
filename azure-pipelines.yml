@@ -31,5 +31,5 @@ steps:
   inputs:
    targetType: 'inline'
    script: |
-     ./import-export-test.sh
+     sudo ./import-export-test.sh
    workingDirectory: "$(System.DefaultWorkingDirectory)/"
