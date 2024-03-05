@@ -13,8 +13,14 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      chmod 777 dsjob-setup.sh
+      chmod 777 cpdctl-install.sh dsjob-setup.sh 
     workingDirectory: "$(System.DefaultWorkingDirectory)/"
+- task: Bash@3
+  inputs:
+   targetType: 'inline'
+   script: |
+     ./cpdctl-install.sh
+   workingDirectory: "$(System.DefaultWorkingDirectory)/"
 - task: Bash@3
   inputs:
    targetType: 'inline'
