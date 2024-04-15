@@ -7,7 +7,7 @@ cpdctl config user set CP4D-user --username $DSJOB_USER --password $DSJOB_PWD
 cpdctl config profile set CP4D-profile --url $DSJOB_URL --user CP4D-user
 cpdctl config profile use CP4D-profile
 export CPDCTL_ENABLE_DSJOB=true
-cpdctl dsjob export-zip --project DataGovProject --name ds1 --file-name TESING-EXPORT 
+cpdctl dsjob export-zip --project DataGovProject --name ds1 --file-name ./TESING-EXPORT 
 sleep 100
-cpdctl dsjob import-zip --project TestingPipeline --file-name TESTING-EXPORT
+cpdctl dsjob import-zip --project TestingPipeline --file-name ./TESTING-EXPORT
 sleep 100
