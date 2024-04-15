@@ -1,3 +1,6 @@
+export DSJOB_URL=https://cpd-cpd.apps.ocp-12000076xq-5wvu.cloud.techzone.ibm.com
+export DSJOB_USER=kubeadmin
+export DSJOB_PWD=XT5MI-w6T69-BP2j3-vbTtP
 export CPDCTL_ENABLE_DSJOB=true
 cpdctl config profile use CP4D-profile
 cpdctl dsjob export --project DataGovProject --name ds1 --file-name test-export-flow
