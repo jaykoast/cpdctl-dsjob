@@ -27,10 +27,4 @@ steps:
    script: |
      ./dsjob-setup.sh
    workingDirectory: "$(System.DefaultWorkingDirectory)/"
-# - task: Bash@3
-#   inputs:
-#    targetType: 'inline'
-#    script: |
-#      sudo chmod 777 import-export.sh
-#      sudo ./import-export.sh
-#    workingDirectory: "$(System.DefaultWorkingDirectory)/"
+
