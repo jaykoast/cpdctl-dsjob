@@ -27,6 +27,7 @@ steps:
    script: |
      ./dsjob-setup.sh
    workingDirectory: "$(System.DefaultWorkingDirectory)/"
+   
 # - task: Bash@3
 #   inputs:
 #    targetType: 'inline'
